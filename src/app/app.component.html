@@ -10,4 +10,26 @@
         [aliasElement]="serverElement"></app-element>
     </div>
   </div>
+
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Number Game</h1>
+      <app-game-control
+        (createdNumber)= "numberGenerated($event)"  
+      ></app-game-control>
+    </div>
+  </div>
+
+  <hr>
+  <div class='row'>
+    <div class="col-xs-12">
+      <h5>Odd number</h5>
+      <app-odd
+        *ngFor="let oddNumber of oddNumbers"
+        [oddNumber]="oddNumber"></app-odd>
+    </div>
+  </div>
 </div>
+
+

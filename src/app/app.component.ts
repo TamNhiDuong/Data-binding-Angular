@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test!'}];
+  //NUMBER GAME
+  numbers = [];
+  oddNumbers = [];
+  evenNumbers = [];
 
   onAddedServer(serverData: {serverName: string, serverContent: string}) {
     this.serverElements.push({
@@ -23,4 +27,16 @@ export class AppComponent {
       content: serverData.serverContent
     });
   }
+
+  //NUMBER GAME
+  numberGenerated(numberGenerated: number) {
+  console.log(numberGenerated);
+  this.numbers.push(numberGenerated);
+  if (numberGenerated % 2 === 1) {
+    this.oddNumbers.push(numberGenerated);
+  }
+}
+
+
+
 }
