@@ -35,6 +35,9 @@ export class AppComponent {
   if (numberGenerated % 2 === 1) {
     this.oddNumbers.push(numberGenerated);
   }
+  else if (numberGenerated % 2 === 0) {
+    this.evenNumbers.push(numberGenerated)
+  }
 }
 
 

@@ -27,7 +27,14 @@
       <h5>Odd number</h5>
       <app-odd
         *ngFor="let oddNumber of oddNumbers"
-        [oddNumber]="oddNumber"></app-odd>
+        [oddNumber]="oddNumber">
+      </app-odd>
+      <h5>Even number</h5>
+      <app-even
+        *ngFor="let evenNumber of evenNumbers"
+        [evenNumber]="evenNumber">
+      </app-even>
+
     </div>
   </div>
 </div>
